@@ -4,7 +4,9 @@
   --bg-gray-color: #EDEDED;
   --text-dark-color: rgb(0, 0, 0);
   --text-gray-color: #3b3b3b;
+  --text-light-color: #FFFF;
   --font-family: 'Montserrat', sans-serif;
+  --shadow: 5px 5px 10px 0px rgba(39, 39, 39, 0.496);
 }
 
 body {
@@ -13,14 +15,14 @@ body {
   /* color: var(--text-dark-color); */
   color: var(--text-dark-color);
   margin: 0;
-  overflow:hidden;
+  overflow-x:hidden;
 }
 
 
 .logo__title {
   font-family: 'Montserrat';
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 2rem;
   color:var(--primary-color);
   margin:0;
 }
@@ -98,4 +100,44 @@ body {
 }
 .header-nav__menu-icon-label-close-show{
   opacity: 1;
+}
+
+/* MAIN */
+
+.main{
+
+}
+.main-container{
+}
+.main__front{
+  /* height: calc(100vh - 81px); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--bg-gray-color);
+  padding: 2rem;
+}
+.main-front__video{
+
+}
+.main-front__desc{
+  padding: 2rem;
+  text-align: center;
+}
+.main-front-desc__titl{
+
+}
+.main-front-desc__text{
+
+}
+.main-front-desc__button{
+  background-color: var(--primary-color);
+  padding: 0.8rem 1rem;
+  color:var(--text-light-color);
+  text-decoration: none;
+  border-radius: 3rem;
+  box-shadow: var(--shadow);
+  font-size: 1.2rem;
+
 }
