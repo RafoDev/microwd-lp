@@ -9,6 +9,7 @@
   /* display: flex;
   flex-direction: column;
   align-items: center; */
+  margin-bottom: 2rem;
 }
 
 .main__front {
@@ -114,7 +115,7 @@
 
 /* VISIÓN Y MISIÓN */
 
-.main__section--historia .main__section-container{
+.main__section--historia .main__section-container {
   display: block;
 }
 
@@ -123,6 +124,7 @@
   display: flex;
   max-width: calc(1200px - 2rem);
 }
+
 .main__section--historia {
   /* box-sizing: border-box; */
   background-color: var(--primary-color);
@@ -139,14 +141,15 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;  
+  justify-content: center;
 }
-.main__section__valores .main__section-container{
+
+.main__section__valores .main__section-container {
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 .main__section__img-container {
-  grid-column: span 1;
   max-width: 500px;
   margin: 0;
 }
@@ -155,9 +158,10 @@
   width: 100%;
 }
 
-.main__section--historia .main__section__article{
+.main__section--historia .main__section__article {
   max-width: 100%;
 }
+
 .main__section__article {
   box-sizing: border-box;
   padding: 1rem;
@@ -180,6 +184,7 @@
   .main__front {
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
   }
 
   .main__front-container {
@@ -193,8 +198,9 @@
     justify-content: space-between;
     gap: 1rem
   }
-  .main__section-container{
-    /* justify-content: space-between; */
+
+  .main__section__valores .main__section-container {
+    justify-content: center;
   }
 
   .main-front__video {
@@ -206,13 +212,16 @@
     height: 400px;
     width: 100%;
   }
-  .main__section--historia .main__section__article{
+
+  .main__section--historia .main__section__article {
     width: 100%;
   }
-  .main__section__article{
+
+  .main__section__article {
     width: 500px;
   }
-  .main__section__img-container{
+
+  .main__section__img-container {
     display: none;
   }
 
