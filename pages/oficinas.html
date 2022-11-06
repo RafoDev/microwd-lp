@@ -5,12 +5,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Microwd</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <title>Microwd | Oficinas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/527ea01e39.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/oficinas.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
 </head>
 
 <body>
@@ -18,25 +37,22 @@
     <div class="header-container">
       <article class="logo">
         <div class="logo-container">
-          <p class="logo__title">
+          <a class="logo__title" href="#">
             |MICROWD.
-          </p>
+          </a>
         </div>
       </article>
-      <div id="header-nav__menu-icon-label" class="header-nav__menu-icon-label">
-        <i class="fa-solid fa-bars"></i>
+      <div class="burger" id="burger">
+        <div class="burger-u"></div>
+        <div class="burger-m"></div>
+        <div class="burger-d"></div>
       </div>
 
       <nav class="header-nav">
         <ul class="header-nav__menu-link-list">
           <li class="header-nav__list-item">
             <a href="../index.html" class="header-nav__link">
-              Inicio
-            </a>
-          </li>
-          <li class="header-nav__list-item">
-            <a href="nosotros.html" class="header-nav__link">
-              Nosotros
+              Nuestra Cooperativa
             </a>
           </li>
           <li class="header-nav__list-item">
@@ -57,22 +73,108 @@
         </ul>
         <ul class="header-nav__social-icons">
           <li class="header-nav__social-icon">
-            <i class="fa-brands fa-facebook"></i>
+            <a href="https://www.facebook.com/microwdperu" class="header-nav__social-link">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
           </li>
           <li class="header-nav__social-icon">
-            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instagram.com/microwd_inv/" class="header-nav__social-link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
           </li>
           <li class="header-nav__social-icon">
-            <i class="fa-brands fa-youtube"></i>
+            <a href="https://www.youtube.com/channel/UChi-S5eLwyeP1vOkKIUlAXg" class="header-nav__social-link">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
           </li>
         </ul>
       </nav>
-      <div id="header-nav__menu-icon-label-close" class="header-nav__menu-icon-label-close">
-        <i class="fa-solid fa-xmark"></i>
-      </div>
     </div>
   </header>
- 
+  <main class="main">
+    <div class="main-container">
+      <div class="main__title-container">
+        <h2 class="main__title text--deco-line">Oficinas</h2>
+      </div>
+
+      <article class="main__section">
+        <article class="main__section-article">
+          <h3 class="main__section-title">
+            Arequipa
+          </h3>
+          <p class="main__section-desc">
+            Avis Aldo Moro Mz. G Lt. 11 <br>
+            Av. 54 Cerro Colorado
+          </p>
+          <a href="https://maps.google.com/maps/dir//Coopac+Microwd+Per%C3%BA+Asociaci%C3%B3n+Poder+Judicial+Avis+Aldo+Moro+Mz-G+Lt.+11+Cerro+Colorado/@-16.3252462,-71.5675212,12z/data=!4m5!4m4!1m0!1m2!1m1!1s0x91424b841089146d:0x7d6e084f1c2b48ab"
+            class="main__section-dir" target="_blank">Cómo llegar 📍
+          </a>
+
+        </article>
+        <iframe class="main__section__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d36410.32572932389!2d-71.51560561770265!3d-16.41650080481333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b841089146d%3A0x7d6e084f1c2b48ab!2sCoopac%20Microwd%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1667768439785!5m2!1ses!2spe"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </article>
+
+      <article class="main__section">
+
+        <article class="main__section-article">
+          <h3 class="main__section-title">
+            Puno </h3>
+          <p class="main__section-desc">
+            Jr Cancharani N° 456
+          </p>
+
+          <a href="https://maps.google.com/maps/dir//Santuario+de+Cancharani+456+Puno+21002/@-15.8515607,-70.0261747,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x915d698cc9b74043:0x81df51b3a42035a6"
+            class="main__section-dir" target="_blank">Cómo llegar 📍
+          </a>
+        </article>
+        <iframe class="main__section__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493.8204593777632!2d-70.02633895556748!3d-15.851398417278137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915d698cc9b74043%3A0x81df51b3a42035a6!2sSantuario%20de%20Cancharani%20456%2C%20Puno%2021002!5e0!3m2!1ses!2spe!4v1667765280169!5m2!1ses!2spe"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </article>
+
+      <article class="main__section">
+
+        <article class="main__section-article">
+          <h3 class="main__section-title">
+            Tarapoto
+          </h3>
+          <p class="main__section-desc">
+            Jr. San Miguel #202 <br> Banda de Shilcayo
+          </p>
+          <a href="https://maps.google.com/maps/dir//San+Miguel+202+Tarapoto+22202/@-6.492783,-76.3495509,18z/data=!4m5!4m4!1m0!1m2!1m1!1s0x91ba0c1180a54baf:0x687cf773ca62a2b7"
+            class="main__section-dir" target="_blank">Cómo llegar 📍
+          </a>
+        </article>
+        <iframe class="main__section__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d294.64298286582385!2d-76.34972452466414!3d-6.492834188880904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ba0c1180a54baf%3A0x687cf773ca62a2b7!2sSan%20Miguel%20202%2C%20Tarapoto%2022202!5e0!3m2!1ses!2spe!4v1667765642110!5m2!1ses!2spe"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </article>
+
+      <article class="main__section">
+
+        <article class="main__section-article">
+          <h3 class="main__section-title">
+            Lamas </h3>
+          <p class="main__section-desc">
+            Jr. Mauricio Rengifo Rios 141
+          </p>
+          <a href="https://maps.google.com/maps/dir//Jr.+Mauricio+Rengifo+HFHJ%2B7VF+Jr.+Ram%C3%B3n+Castilla+Lamas+22151/@-6.4218098,-76.5178264,18z/data=!4m5!4m4!1m0!1m2!1m1!1s0x91b0a6471d20e3e7:0x1e5ebd365b2cfb3e"
+            class="main__section-dir" target="_blank">Cómo llegar 📍
+          </a>
+
+
+        </article>
+        <iframe class="main__section__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d294.64298286582385!2d-76.34972452466414!3d-6.492834188880904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ba0c1180a54baf%3A0x687cf773ca62a2b7!2sSan%20Miguel%20202%2C%20Tarapoto%2022202!5e0!3m2!1ses!2spe!4v1667765642110!5m2!1ses!2spe"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </article>
+
+
+    </div>
+  </main>
   <footer class="footer">
     <div class="footer-container">
       <section class="footer__contact">
@@ -88,21 +190,21 @@
         </article>
       </section>
       <section class="footer__social">
-        <a class="footer__social-icon" href="#">
+        <a class="footer__social-icon" href="https://www.facebook.com/microwdperu">
           <i class="fa-brands fa-facebook"></i>
         </a>
-        <a class="footer__social-icon" href="#">
+        <a class="footer__social-icon" href="https://www.instagram.com/microwd_inv/">
           <i class="fa-brands fa-instagram"></i>
         </a>
-        <a class="footer__social-icon" href="#">
+        <a class="footer__social-icon" href="https://www.youtube.com/channel/UChi-S5eLwyeP1vOkKIUlAXg">
           <i class="fa-brands fa-youtube"></i>
         </a>
       </section>
-      <article class="logo">
-        <div class="logo-container">
-          <p class="logo__title text--medium">
+      <article class="footer__logo">
+        <div class="footer__logo-container">
+          <a class="footer__logo__title text--medium" href="../index.html">
             <span class="text--gray">2022</span> |MICROWD.
-          </p>
+          </a>
         </div>
       </article>
     </div>
