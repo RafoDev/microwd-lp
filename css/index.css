@@ -1,0 +1,230 @@
+@import "styles.css";
+
+.main {
+  width: 100vw;
+
+}
+
+.main-container {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.main__front {
+  background-color: var(--bg-gray-color);
+  /* background-color: #e5e5f7;
+  background-image: 
+  linear-gradient(135deg, #f4f4f4 25%, transparent 25%), 
+  linear-gradient(225deg, #f0eeee 25%, transparent 25%), 
+  linear-gradient(45deg, #ffffff 25%, transparent 25%), 
+  linear-gradient(315deg, #f5f5f5 25%, #ffffff 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 10px 10px;
+  background-repeat: repeat; */
+}
+
+.main__front-container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+
+.main-front__video {}
+
+.main-front__desc {
+  /* padding: 2rem; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: left;
+  max-width: 300px;
+}
+
+.main-front-desc__title {
+  margin-top: 0;
+}
+
+.main-front-desc__text {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.main-front-desc__button {
+  padding: 0.8em 1em;
+  color: var(--text-dark-color);
+  text-decoration: none;
+  border: 1px solid var(--primary-color);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: background-color 0.25s;
+  position: relative;
+}
+
+.main-front-desc__button-back {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  /* background-color: var(--primary-color); */
+  transition: transform 0.25s;
+}
+
+.main-front-desc__button:hover .main-front-desc__button-back {
+  transform: scaleX(1);
+
+}
+
+.main-front-desc__button:hover .main-front-desc__button-text {
+  color: var(--text-light-color);
+}
+
+.main-front-desc__button:hover .main-front-desc__button-icon {
+  color: var(--text-light-color);
+  /* font-size: 1.5rem;
+   */
+  transform: scale(1.5);
+}
+
+.main-front-desc__button-text {
+  color: var(--primary-color);
+  margin: 0;
+  z-index: 25;
+}
+
+.main-front-desc__button-icon {
+  color: var(--primary-color);
+  font-size: 1rem;
+  transition: transform 0.5s;
+  z-index: 25;
+
+  /* width: 25%; */
+}
+
+
+/* VISIÓN Y MISIÓN */
+
+.main__section--historia .main__section-container{
+  display: block;
+}
+
+.main__section {
+  margin: 0 auto;
+  display: flex;
+  max-width: calc(1200px - 2rem);
+}
+.main__section--historia {
+  /* box-sizing: border-box; */
+  background-color: var(--primary-color);
+  color: var(--text-light-color);
+  background: rgb(172, 95, 213);
+  background: radial-gradient(circle, rgba(172, 95, 213, 1) 7%, rgba(145, 83, 179, 1) 48%);
+  max-width: calc(1200px - 2rem);
+  /* margin: 0 auto; */
+  margin-bottom: 3rem;
+}
+
+.main__section-container {
+  /* box-sizing: border-box; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+.main__section__valores .main__section-container{
+  margin: 0 auto;
+}
+
+.main__section__img-container {
+  grid-column: span 1;
+  max-width: 500px;
+  margin: 0;
+}
+
+.main__section-img {
+  width: 100%;
+}
+
+.main__section--historia .main__section__article{
+  max-width: 100%;
+}
+.main__section__article {
+  box-sizing: border-box;
+  padding: 1rem;
+  max-width: 500px;
+}
+
+.main__section__article-title {
+  margin: 0;
+}
+
+.main__section__article-text {}
+
+.main__section__article-list {}
+
+.main__section__article-list-item {}
+
+
+@media(min-width: 992px) {
+
+  .main__front {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__front-container {
+    /* max-width: 1200px; */
+    box-sizing: border-box;
+    flex-basis: 1200px;
+    /* min-height: calc(100vh - 53px); */
+
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem
+  }
+  .main__section-container{
+    /* justify-content: space-between; */
+  }
+
+  .main-front__video {
+    /* max-width: 1000px; */
+  }
+
+  .main-front__video-iframe {
+    aspect-ratio: 16/9;
+    height: 400px;
+    width: 100%;
+  }
+  .main__section--historia .main__section__article{
+    width: 100%;
+  }
+  .main__section__article{
+    width: 500px;
+  }
+  .main__section__img-container{
+    display: none;
+  }
+
+  .footer__logo__title {
+    font-size: 2rem;
+  }
+
+  .main-front__desc {
+    max-width: 400px;
+  }
+
+  .main-front__button {
+    max-width: 300px;
+  }
+}

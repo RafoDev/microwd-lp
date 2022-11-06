@@ -1,0 +1,42 @@
+@import "styles.css";
+
+.main{
+
+}
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__title-container{
+  padding: 1rem;  
+}
+.main__title{
+  flex-basis: min-content;
+  margin-bottom: 1rem;
+}
+.main__section-produccion{
+  display: flex;
+  flex-wrap: wrap;
+}
+.main__section-figure{
+  /* width: 100vw; */
+  margin:0; 
+}
+.main__section-img{
+  min-width: 500px;
+  height: 250px;
+  object-fit: cover;
+}
+.main__section-article{
+  padding: 1.5rem;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+.main__section-title{
+  margin:0;
+}
+.main__section-desc{
+
+}
