@@ -1,0 +1,70 @@
+@import "styles.css";
+
+.main {
+  background-color: var(--bg-gray-color);
+}
+
+.main-container {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:1rem;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.main__title-container {
+  padding: 1rem;
+  padding-bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.main__title {
+  flex-basis: min-content;
+  margin-bottom: 1rem;
+}
+.main__card {
+  max-width: 500px;
+  align-self: flex-start;
+}
+
+.main__card-figure {
+  width: 100%;
+  height: 250px;
+  margin:0;
+}
+
+.main__card-img {
+  border:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main__card-article {
+  padding: 1rem;
+  border:1px solid var(--text-gray-color);
+  border-top: 0;
+}
+
+.main__card-title {
+  position: relative;
+  margin-top: 0;
+  /* display: inline; */
+}
+.main__card-title::after{
+  content: '';
+  width: 100%;
+  height: 0.1px;
+  background-color: var(--bg-dark-color);
+  position: absolute;
+  bottom:-0.5rem;
+  left:0;
+}
+
+.main__card-text {}
+
+@media(min-width: 600px) {}

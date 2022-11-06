@@ -4,7 +4,7 @@
   --bg-gray-color: #F6F7F8;
   --bg-dark-color: #1E1E1E;
   --text-dark-color: rgb(0, 0, 0);
-  --text-gray-color: #3b3b3b;
+  --text-gray-color: #3f3f3f;
   --text-light-color: #FFFF;
   --font-family: 'Montserrat', sans-serif;
   --shadow: 5px 5px 10px 0px rgba(39, 39, 39, 0.496);
@@ -18,8 +18,8 @@ body {
   display: flex;
   width: 100vw;
   overflow-x: hidden;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 
@@ -99,7 +99,9 @@ body {
   clip-path: circle(0.0% at 50% 50%);
   transition: clip-path 0.25s cubic-bezier(0.59, 0.36, 0.32, 0.8);
 }
-
+.header-nav__list-item--active::after{
+  clip-path: circle(70.7% at 50% 50%);
+}
 .header-nav__list-item:hover::after {
   clip-path: circle(70.7% at 50% 50%);
 
