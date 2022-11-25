@@ -10,7 +10,10 @@
 }
 
 .main__title-container {
+  text-align: center;
   padding: 1rem;
+  max-width: 500px;
+  background-image: ;
 }
 
 .main__title {
@@ -18,12 +21,26 @@
   margin-bottom: 1rem;
 }
 
+.main__sub-title{
+  margin-top: 0;
+  /* text-align: left; */
+  /* outline: 1px solid red; */
+}
+.main__title-description{
+  padding: 1rem;
+  padding-top: 0;
+  border-bottom: 1px solid var(--text-light-gray-color);
+  /* border-left: 5px solid var(--text-light-gray-color); */
+  /* box-shadow: -1px 1px 5px 0px var(--text-gray-color); */
+  text-align: left;
+  /* outline: 1px solid red; */
+}
+
 .main__section-produccion {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .main__section-figure {
   /* box-sizing: border-box; */
   /* width: 100vw; */
