@@ -250,7 +250,9 @@ body {
 .text--light-gray{
   color: var(--text-light-gray-color)
 }
-
+.margin--bottom{
+  margin-bottom: 1rem;
+}
 .text--bold {
   font-weight: bold;
 }
